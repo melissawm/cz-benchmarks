@@ -1,2 +1,2 @@
-.. include:: cryoet_data_portal_docsite_landing.md
+.. include:: home.md
    :parser: myst_parser.sphinx_

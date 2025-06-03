@@ -2955,20 +2955,20 @@ Components communicate through well-defined interfaces. This minimizes dependenc
 Custom type definitions in the datasets and validators enforce that the data and model outputs meet expected standards.</p></li>
 </ul>
 <h2 id="class-diagrams">Class Diagrams<a class="headerlink" href="#class-diagrams" title="Link to this heading">¶</a></h2>
-<pre data-zoom-id="id-cac0a2d0-cd20-4d33-8617-e644f20c7f08" id="class-diagram-datasets" class="mermaid">
+<pre data-zoom-id="id-eb73381b-5a2b-4c1f-ba89-a0d8cdb45d0f" id="class-diagram-datasets" class="mermaid">
         classDiagram
   ABC &lt;|-- BaseDataset
   BaseDataset &lt;|-- SingleCellDataset
   Enum &lt;|-- DataType
   Enum &lt;|-- Organism
   SingleCellDataset &lt;|-- PerturbationSingleCellDataset
-    </pre><pre data-zoom-id="id-999f02d3-4c3d-463d-b553-80758bc03f2d" id="class-diagram-validators" class="mermaid">
+    </pre><pre data-zoom-id="id-c29cd58b-1630-4335-9c0d-7d777b51ecd7" id="class-diagram-validators" class="mermaid">
         classDiagram
   ABC &lt;|-- BaseModelImplementation
   ABC &lt;|-- BaseModelValidator
   BaseModelValidator &lt;|-- BaseModelImplementation
   BaseModelValidator &lt;|-- BaseSingleCellValidator
-    </pre><pre data-zoom-id="id-0671f42c-fcd0-469c-b464-194a46447df4" id="class-diagram-tasks" class="mermaid">
+    </pre><pre data-zoom-id="id-439860af-1a6b-4277-b33c-2ec5120f97c2" id="class-diagram-tasks" class="mermaid">
         classDiagram
   BaseTask &lt;|-- BatchIntegrationTask
   BaseTask &lt;|-- ClusteringTask
@@ -2976,7 +2976,7 @@ Custom type definitions in the datasets and validators enforce that the data and
   BaseTask &lt;|-- EmbeddingTask
   BaseTask &lt;|-- MetadataLabelPredictionTask
   BaseTask &lt;|-- PerturbationTask
-    </pre><pre data-zoom-id="id-e7623884-c902-46da-a79e-8b8b6129ec07" id="class-diagram" class="mermaid">
+    </pre><pre data-zoom-id="id-e503f499-6f5c-4fae-9161-19a54ede05ef" id="class-diagram" class="mermaid">
         classDiagram
   BaseModel &lt;|-- AggregatedMetricResult
   BaseModel &lt;|-- MetricInfo
