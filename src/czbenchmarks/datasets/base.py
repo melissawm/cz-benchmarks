@@ -94,6 +94,7 @@ class BaseDataset(ABC):
         self, model_type: ModelType | None, data_type: DataType, value: DataValue
     ) -> None:
         """Safely set an output with type checking.
+
         Args:
             model_type (ModelType | None): The type of model associated with the output.
                 This parameter is used to differentiate between outputs
@@ -120,6 +121,7 @@ class BaseDataset(ABC):
         self, model_type: ModelType | None, data_type: DataType
     ) -> DataValue:
         """Safely get an output with error handling.
+
         Args:
             model_type (ModelType | None): The type of model associated with the output.
                 This parameter is used to differentiate between outputs

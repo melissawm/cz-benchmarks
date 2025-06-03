@@ -1,0 +1,31 @@
+# API Reference
+
+The cz-benchmarks package consists of several core modules, each designed to work independently while contributing to a cohesive benchmarking workflow. Below is an overview of these modules, along with links to their detailed documentation.
+
+## Core Modules
+
+- **Datasets** ({mod}`czbenchmarks.datasets`):
+   Contains classes for loading and validating datasets (e.g., {class}`SingleCellDataset <czbenchmarks.datasets.SingleCellDataset>`), with support for AnnData and custom metadata.
+
+- **Models** ({mod}`czbenchmarks.models`):
+   - **Implementations:**
+      Contains the concrete model inference logic in Docker container form. The base class is {class}`BaseModelImplementation <czbenchmarks.models.implementations.BaseModelImplementation>`.
+   - **Validators:**
+      Enforces that datasets meet the requirements of particular models. Validators extend from {class}`BaseModelValidator <czbenchmarks.models.validators.BaseModelValidator>` or {class}`BaseSingleCellValidator <czbenchmarks.models.validators.BaseModelValidator>`.
+
+- **Tasks** ({mod}`czbenchmarks.tasks`):
+   Provides evaluation tasks (e.g., clustering, embedding, perturbation prediction) by extending the {class}`BaseTask <czbenchmarks.tasks.BaseTask>` class.
+
+- **Metrics** ({mod}`czbenchmarks.metrics`):
+   Maintains a registry of metric functions through the {class}`MetricRegistry <czbenchmarks.metrics.MetricRegistry>` interface and organizes metrics into categories (clustering, embedding, etc.).
+
+- **Runner** ({mod}`czbenchmarks.runner`):
+   Orchestrates the overall workflow: loading datasets, running model inference, executing tasks, and serializing results.
+
+## Additional Utilities
+
+- **CLI** ({mod}`czbenchmarks.cli`):
+   Command-line interface for interacting with the cz-benchmarks package.
+
+- **Utils** ({mod}`czbenchmarks.utils`):
+   Contains utility functions and helpers used across the package.

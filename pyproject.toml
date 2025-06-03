@@ -72,14 +72,13 @@ docs = [
     "sphinx==8.1.3",
     "sphinx-autoapi",
     "sphinx-autodoc-typehints",
-    "sphinx-markdown-builder",
-    "myst-parser",
-    "sphinxcontrib.mermaid", 
-    "sphinx-rtd-theme",
+    "myst-nb",
+    "sphinxcontrib.mermaid",
+    "sphinx-immaterial",
     "sphinx-copybutton",
-    "nbsphinx",
     "linkify-it-py",
-    
+    "sphinx-external-toc",
+    "sphinx-design",
 ]
 
 [project.urls]

@@ -1,0 +1,47 @@
+root: index
+subtrees:
+- entries:
+  - file: home.md
+    title: "Home"
+  - file: quick_start.md
+  - file: how_to_guides/index.md
+    subtrees:
+    - entries:
+      - file: how_to_guides/add_custom_dataset.md
+      - file: how_to_guides/add_custom_model.md
+      - file: how_to_guides/add_new_task.md
+      - file: how_to_guides/add_new_metric.md
+      - file: how_to_guides/interactive_mode.md
+      - file: how_to_guides/visualize_results.md
+      - file: how_to_guides/setup_guides.md
+  - file: developer_guides/index.md
+    subtrees:
+    - entries:
+      - file: developer_guides/design_overview.rst
+      - file: developer_guides/datasets.md
+      - file: developer_guides/models.md
+      - file: developer_guides/tasks.md
+      - file: developer_guides/metrics.md
+      - file: developer_guides/debugging.md
+      - file: developer_guides/release_process.md
+      - file: roadmap.md
+  - file: api_reference.md
+    subtrees:
+    - entries:
+      - file: autoapi/czbenchmarks/datasets/index.rst
+      - file: autoapi/czbenchmarks/models/index.rst
+      - file: autoapi/czbenchmarks/tasks/index.rst
+      - file: autoapi/czbenchmarks/metrics/index.rst
+      - file: autoapi/czbenchmarks/runner/index.rst
+      - file: autoapi/czbenchmarks/cli/index.rst
+      - file: autoapi/czbenchmarks/utils/index.rst
+      - file: autoapi/czbenchmarks/constants/index.rst
+      - file: autoapi/czbenchmarks/exceptions/index.rst
+  - file: assets.md
+  - file: policy/index.md
+    subtrees:
+    - entries:
+      - file: policy/definitions.md
+      - file: policy/code_of_conduct.rst
+      - file: legal.md
+  - file: changelog_release_notes.rst

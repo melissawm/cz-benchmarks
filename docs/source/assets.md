@@ -1,3 +1,7 @@
+---
+hide-navigation: true
+---
+
 # Assets
 
 ## Table of Contents
@@ -7,19 +11,17 @@
 - [Data Descriptions](#data-descriptions)
 - [Task Details](#task-details)
     - [Cell Clustering (in embedding space)](#cell-clustering-in-embedding-space)
-    - [Metadata Label Prediction - Cell Type Classification](#metadata-label-prediction-cell-type-classification)
+    - [Metadata Label Prediction - Cell Type Classification](#metadata-label-prediction---cell-type-classification)
     - [Cross-Species Batch Integration](#cross-species-batch-integration)
     - [Genetic Perturbation Prediction](#genetic-perturbation-prediction)
 - [Guidelines for Included Assets](#guidelines-for-included-assets)
-    
-
 
 ## Task Descriptions
 
 | Task                                                                                | Description                                                                                                                 |
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | [Cell clustering](#cell-clustering-in-embedding-space) (in embedding space)         | Cluster cells in embedding space and evaluate against known labels (e.g. cell type)                                         |
-| [Cell type classification](#metadata-label-prediction-cell-type-classification)   | Use classifiers to predict cell type from embeddings                                                                        |
+| [Cell type classification](#metadata-label-prediction---cell-type-classification)   | Use classifiers to predict cell type from embeddings                                                                        |
 | [Cross-Species Batch Integration](#cross-species-batch-integration)                 | Evaluate whether embeddings can align multiple species in a shared space                                                    |
 | [Genetic perturbation prediction](#genetic-perturbation-prediction)                 | [In progress, subject to further validation] Compare predicted vs ground-truth expression shifts under genetic perturbation |
 
@@ -29,19 +31,19 @@
 | Model                                                                          | Description                                                                                                                                                                                                                                            | Link                                                                                              |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
 | AIDO.Cell 3M                                                                   | Transformer-based foundation model capable of handling the entire human transcriptome as input and demonstrating performance on tasks such as zero-shot clustering, cell type classification, and perturbation modeling.                               | [Model card](https://virtualcellmodels.cziscience.com/model/01964078-54e7-7937-8817-0c53dda9c153) |
-| Geneformer  gf-12L-95M-i4096                                                   | A foundation model for single-cell data that generates meaningful embeddings of cells that can then be used for a wide variety of downstream tasks in a zero-shot manner.                                                                              | [Hugging face](https://huggingface.co/ctheodoris/Geneformer)                                      |
+| Geneformer  gf-12L-95M-i4096                                                   | A foundation model for single-cell data that generates meaningful embeddings of cells that can then be used for a wide variety of downstream tasks in a zero-shot manner.                                                                              | [Hugging face](https://huggingface.co/ctheodoris/Geneformer)                                      |
 | scGenePTGO-all, fine tuned, Adamson                                            | A single-cell model for perturbation prediction. This is a model variation fine-tuned on the gene ontology annotations, molecular function annotations, cellular component annotations, biological processes annotations, and Adamson et al. datasets. | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
 | scGenePTGO−all, fine-tuned, Norman                                             | A single-cell model for perturbation prediction. This is a model variation fine-tuned on the gene ontology annotations, molecular function annotations, cellular component annotations,biological processes annotations, and Norman et al. datasets.   | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
-| scGenePTGO-C, fine-tuned, Adamson                                              | A single-cell model for perturbation prediction. This is a model variation fine-tuned on gene ontology annotation,  gene cellular component annotations, and Adamson et al. datasets.                                                                  | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
-| scGenePTGO-C, fine-tuned, Norman                                               | A single-cell model for perturbation prediction. This is a model variation fine-tuned on gene ontology annotation,  gene cellular component annotations, and Norman et al. datasets.                                                                   | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
+| scGenePTGO-C, fine-tuned, Adamson                                              | A single-cell model for perturbation prediction. This is a model variation fine-tuned on gene ontology annotation,  gene cellular component annotations, and Adamson et al. datasets.                                                                  | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
+| scGenePTGO-C, fine-tuned, Norman                                               | A single-cell model for perturbation prediction. This is a model variation fine-tuned on gene ontology annotation,  gene cellular component annotations, and Norman et al. datasets.                                                                   | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
 | scGenePTNCBI+UniProt, fine-tuned, Adamson                                      | A single-cell model for perturbation prediction. This is a model variation fine-tuned on NCBI Gene Card Summaries, UniProt protein summaries, and Adamson et al. datasets.                                                                             | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
 | scGenePTNCBI+UniProt, fine-tuned, Norman                                       | A single-cell model for perturbation prediction. This is a model variation fine-tuned on NCBI Gene Card Summaries, UniProt protein summaries, and Norman et al. datasets.                                                                              | [Model card](https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120) |
 | scGPT - whole human                                                            | A foundation model designed to integrate and analyze large-scale single-cell multi-omics data using a generative pre-trained transformer (GPT) architecture.                                                                                           | [Model card](https://virtualcellmodels.cziscience.com/model/0193323f-2875-7858-862c-6903bf667543) |
 | scVI - Version: CxG scVI trained on Census 2023-12-15, homo sapiens, 63M cells | Uses autoencoding-variational Bayesian optimization to learn the underlying latent state of gene expression and to approximate the distributions that underlie observed expression values, while accounting for batch effects and limited sensitivity. | [Model card](https://virtualcellmodels.cziscience.com/model/0192c0b9-e574-7f7e-bf7d-167ed1ef2ced) |
 | TF-Exemplar                                                                    | A generative model trained on 110 million cells from human and four model organisms that demonstrates zero-shot performance for cell type classification across species.                                                                               | [Model card](https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc) |
 | TF-Metazoa                                                                     | A generative model trained on 112 million cells spanning all twelve species, demonstrating zero-shot performance for cell type classification across species.                                                                                          | [Model card](https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc) |
-| TF-Sapiens                                                                     | A generative model trained on 57 million human-only cells trained for tasks such as  disease state identification in human cells prediction of cell type specific transcription factors and gene-gene regulatory relationships in humans.              | [Model card](https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc) |
-| UCE - 33 layer                                                                 | A  zero-shot foundation model for single-cell biology, representing any cell across species, tissues, and disease states in a fixed embedding space where cell organization emerges without predefined cell types.                                     | [Repo](https://github.com/snap-stanford/UCE)                                                      |
+| TF-Sapiens                                                                     | A generative model trained on 57 million human-only cells trained for tasks such as  disease state identification in human cells prediction of cell type specific transcription factors and gene-gene regulatory relationships in humans.              | [Model card](https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc) |
+| UCE - 33 layer                                                                 | A  zero-shot foundation model for single-cell biology, representing any cell across species, tissues, and disease states in a fixed embedding space where cell organization emerges without predefined cell types.                                     | [Repo](https://github.com/snap-stanford/UCE)                                                      |
 | UCE - 4 layer                                                                  | A zero-shot foundation model for single-cell biology, representing any cell across species, tissues, and disease states in a fixed embedding space where cell organization emerges without predefined cell types.                                      | [Repo](https://github.com/snap-stanford/UCE)                                                      |
 
   
@@ -61,7 +63,7 @@
 
 ### Cell Clustering (in embedding space)
 
-This task evaluates how well the model's embedding space separates different cell types. There is a forward pass of the data to produce embeddings. The embeddings are then clustered and compared to known cell type labels. 
+This task evaluates how well the model's embedding space separates different cell types. There is a forward pass of the data to produce embeddings. The embeddings are then clustered and compared to known cell type labels. 
 
 #### Task: Cell Clustering (in embedding space)
 
@@ -74,14 +76,14 @@ This task evaluates how well the model's embedding space separates different cel
   
 The following models were benchmarked using the Tabula Sapiens v2 dataset, per tissue:  
 - AIDO.Cell 3M
-- Geneformer  gf-12L-95M-i4096
+- Geneformer  gf-12L-95M-i4096
 - Linear baseline
 - scGPT
 - scVI - Census 2023-12-15
 - Transcriptformer Examplar
 - Transcriptformer Metazoa
-- Transcriptformer  Sapiens
-- UCE 33-layer 
+- Transcriptformer  Sapiens
+- UCE 33-layer 
 - UCE 4 -layer
 
 ### Metadata label prediction - Cell type classification
@@ -102,7 +104,7 @@ This task evaluates how well model embeddings capture information relevant to ce
 
 The following models were benchmarked using the Tabula Sapiens v2 dataset, per tissue:
 - AIDO.Cell 3M
-- Geneformer  gf-12L-95M-i4096
+- Geneformer  gf-12L-95M-i4096
 - Linear baseline
 - scGPT
 - scVI - Census 2023-12-15
@@ -115,7 +117,7 @@ The following models were benchmarked using the Tabula Sapiens v2 dataset, per t
 
 ### Cross-Species Batch Integration
 
-This task evaluates the model's ability to learn representations that are consistent across different species. There is a forward pass of the data (each species is treated as an individual dataset) through the model. Once embeddings are generated for each species, they are concatenated into a single embedding matrix to enable cross-species comparison. Finally, the concatenated embeddings, along with the corresponding species labels, are used to compute evaluation metrics. 
+This task evaluates the model's ability to learn representations that are consistent across different species. There is a forward pass of the data (each species is treated as an individual dataset) through the model. Once embeddings are generated for each species, they are concatenated into a single embedding matrix to enable cross-species comparison. Finally, the concatenated embeddings, along with the corresponding species labels, are used to compute evaluation metrics. 
 
 ####  Task: Cross-Species Batch Integration
 
@@ -124,7 +126,7 @@ This task evaluates the model's ability to learn representations that are consis
 | Entropy per cell | Measures the average entropy of the batch labels within the local neighborhood of each cell. Implemented [here](https://github.com/chanzuckerberg/cellxgene-census/blob/f44637ba33567400820407f4f7b9984e52966156/tools/models/metrics/run-scib.py#L86). |
 | Batch silhouette | A modified silhouette score to measure the extent of batch mixing within biological labels. Described by [Luecken et al](https://www.nature.com/articles/s41592-021-01336-8).                                                                           |
 
-The following models were benchmarked using the Spermatogenesis  dataset, per species:
+The following models were benchmarked using the Spermatogenesis  dataset, per species:
 
 - Transcriptformer Exemplar
 - Transcriptformer Metazoa
@@ -147,12 +149,12 @@ This task evaluates the performance of models fine-tuned to predict cellular res
 | Pearson Delta Correlation - all genes       |             |
 | Jaccardian Similarity                       |             |
 
-- The following models were benchmarked using the Adamson et al.  dataset:
+- The following models were benchmarked using the Adamson et al.  dataset:
     - scGenePTGO-all, fine tuned, Adamson
     - scGenePTGO-C, fine-tuned, Adamson
     - scGenePTNCBI+UniProt, fine-tuned, Adamson
     
-- The following models were benchmarked using the Norman et al.  dataset:
+- The following models were benchmarked using the Norman et al.  dataset:
     - scGenePTGO−all, fine-tuned, Norman
     - scGenePTGO-C, fine-tuned, Norman
     - scGenePTNCBI+UniProt, fine-tuned, Norman
@@ -168,5 +170,5 @@ At this stage, the cz-benchmarks project represents an initial prototype and pol
 - Models included within the package have been contributed by CZI, on behalf of model developers. Feedback from model developers is being sourced via direct outreach to these individuals.
 - Future versions will incorporate an expanded and refined set of assets. However, not all assets are appropriate for inclusion in a benchmarking platform. Benchmark assets are chosen based on overall quality in relation to comparable reference points, current standards in the research community, and relationship to supported priority benchmark domains as outlined in the [roadmap](./roadmap.md). Formal asset contribution and asset governance policies are in development.
 - **Note**: TranscriptFormer was developed by the CZI AI team using separate task implementations. The cz-benchmarks task definitions, developed by the CZI SciTech team, were not included as a part of TranscriptFormer training and evaluation.
-- At this phase, the CZI SciTech team will guide initial decisions, coordinate updates, and ensure that all assets conform to policy requirements (licensing, versioning, etc.) through direct collaboration with working groups, composed of domain-specific experts from the broader scientific community and partners. 
+- At this phase, the CZI SciTech team will guide initial decisions, coordinate updates, and ensure that all assets conform to policy requirements (licensing, versioning, etc.) through direct collaboration with working groups, composed of domain-specific experts from the broader scientific community and partners. 
 - We value your feedback -- feel free to open a GitHub issue or reach out to us at virtualcellmodels@chanzuckerberg.com.

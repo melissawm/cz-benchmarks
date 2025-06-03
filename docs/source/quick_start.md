@@ -1,3 +1,7 @@
+---
+hide-navigation: true
+---
+
 # Quick Start Guide
 
 Welcome to **cz-benchmarks**! This guide will help you get started with installation, setup, and running your first benchmark in just a few steps.
@@ -126,9 +130,9 @@ print(results)
 ## Next Steps
 
 Explore the following resources to deepen your understanding:
-- **How-to Guides**: [Practical guides](./how_to_guides/index.rst) for using and extending the library.
+- **How-to Guides**: [Practical guides](how_to_guides/index) for using and extending the library.
 - **Setup Guides**: [Setup Guides](./how_to_guides/setup_guides.md)
-- **Developer Docs**: [Internal structure and extension points](./developer_guides/index.rst).
+- **Developer Docs**: [Internal structure and extension points](developer_guides/index).
 - **GitHub Repository**: [cz-benchmarks](https://github.com/chanzuckerberg/cz-benchmarks) for troubleshooting and support.
 
 Happy benchmarking! 🚀
