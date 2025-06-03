@@ -1,0 +1,3574 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="autoapi/czbenchmarks/exceptions/index.html">
+      
+      
+        <link rel="next" href="policy/index.html">
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Assets - cz-benchmarks 0.9.2 documentation</title>
+      
+    
+    
+      
+        
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.9028410853f654ac2.min.css?v=2dbc6387" />
+        <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+        <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+        <link rel="stylesheet" type="text/css" href="_static/custom.css?v=862d1ae6" />
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#table-of-contents" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+    <nav class="md-header__inner md-grid" aria-label="Header">
+
+        <!-- Link to home -->
+        <a href="index.html" title="cz-benchmarks 0.9.2 documentation"
+            class="md-header__button md-logo" aria-label="cz-benchmarks 0.9.2 documentation" data-md-component="logo">
+            
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+        </a>
+
+        <!-- Button to open drawer -->
+        <label class="md-header__button md-icon" for="__drawer">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+        </label>
+
+        <!-- Header title -->
+        <div class="md-header__title">
+            <div class="md-header__ellipsis">
+                <div class="md-header__topic">
+                    <span class="md-ellipsis">
+                        cz-benchmarks 0.9.2 documentation
+                    </span>
+                </div>
+                <div class="md-header__topic" data-md-component="header-topic">
+                    <span class="md-ellipsis">
+                        
+                        Assets
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color palette toggle -->
+        
+        
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+        
+        
+
+        <!-- User preference: color palette -->
+        
+        <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+        
+
+        <!-- Site language selector -->
+        
+
+        <!-- Button to open search modal -->
+        
+        <label class="md-header__button md-icon" for="__search">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+
+        <!-- Search interface -->
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+        <!-- Repository information -->
+        
+        <div class="md-header__source">
+            <a href="https://github.com/chanzuckerberg/cz-benchmarks/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CZ Benchmarks Documentation
+  </div>
+</a>
+        </div>
+        
+    </nav>
+
+    <!-- Navigation tabs (sticky) -->
+    
+    
+    
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="home.html" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="quick_start.html" class="md-tabs__link">
+        
+  
+    
+  
+  Quick Start Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="how_to_guides/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  How To Guides
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="developer_guides/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Developer Guides
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="api_reference.html" class="md-tabs__link">
+        
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="#" class="md-tabs__link">
+        
+  
+    
+  
+  Assets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="policy/index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Policy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="changelog_release_notes.html" class="md-tabs__link">
+        
+  
+    
+  
+  Changelog &amp; Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+    
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="cz-benchmarks 0.9.2 documentation" class="md-nav__button md-logo" aria-label="cz-benchmarks 0.9.2 documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+    </a>
+    cz-benchmarks 0.9.2 documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chanzuckerberg/cz-benchmarks/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CZ Benchmarks Documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="home.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quick_start.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="how_to_guides/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    How To Guides
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How To Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how_to_guides/add_custom_dataset.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add a Custom Dataset
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how_to_guides/add_custom_model.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add a Custom Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how_to_guides/add_new_task.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add a Custom Task
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how_to_guides/add_new_metric.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add a Custom Metric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how_to_guides/interactive_mode.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Running a Docker Container in Interactive Mode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how_to_guides/visualize_results.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visualizing Benchmark Results
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how_to_guides/setup_guides.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup Guides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="developer_guides/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Developer Guides
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Developer Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developer_guides/design_overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Design Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developer_guides/datasets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Datasets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developer_guides/models.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Models
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developer_guides/tasks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tasks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developer_guides/metrics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metrics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developer_guides/debugging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive Debugging Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developer_guides/release_process.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release Process
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="roadmap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="api_reference.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/datasets/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>datasets
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>datasets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/datasets/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_1_1" id="__nav_5_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/datasets/base/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>datasets.<wbr>base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/datasets/single_cell/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>datasets.<wbr>single_<wbr>cell
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/datasets/types/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>datasets.<wbr>types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/datasets/utils/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>datasets.<wbr>utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/models/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/models/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2_1" id="__nav_5_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/models/implementations/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models.<wbr>implementations
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2_1_1" id="__nav_5_2_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>models.<wbr>implementations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/models/implementations/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2_1_1_1" id="__nav_5_2_1_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_5_2_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/models/implementations/base_model_implementation/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models.<wbr>implementations.<wbr>base_<wbr>model_<wbr>implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/models/types/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models.<wbr>types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/models/utils/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models.<wbr>utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/models/validators/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models.<wbr>validators
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2_1_4" id="__nav_5_2_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>models.<wbr>validators
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1_4_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/models/validators/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2_1_4_1" id="__nav_5_2_1_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_5_2_1_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_1_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/models/validators/base_model_validator/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models.<wbr>validators.<wbr>base_<wbr>model_<wbr>validator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/models/validators/base_single_cell_model_validator/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>models.<wbr>validators.<wbr>base_<wbr>single_<wbr>cell_<wbr>model_<wbr>validator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/tasks/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>tasks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/tasks/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3_1" id="__nav_5_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/base/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/clustering/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>clustering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/constants/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>constants
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/embedding/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>embedding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/integration/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/label_prediction/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>label_<wbr>prediction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_1_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/tasks/single_cell/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>single_<wbr>cell
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3_1_7" id="__nav_5_3_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_3_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>tasks.<wbr>single_<wbr>cell
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_1_7_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/tasks/single_cell/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3_1_7_1" id="__nav_5_3_1_7_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_5_3_1_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_1_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/single_cell/cross_species/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>single_<wbr>cell.<wbr>cross_<wbr>species
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/single_cell/perturbation/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>single_<wbr>cell.<wbr>perturbation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/tasks/utils/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>tasks.<wbr>utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/metrics/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>metrics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/metrics/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_4_1" id="__nav_5_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/metrics/implementations/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>metrics.<wbr>implementations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/metrics/types/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>metrics.<wbr>types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/metrics/utils/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>metrics.<wbr>utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/runner/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>runner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/cli/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>cli
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            czbenchmarks.<wbr>cli
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="autoapi/czbenchmarks/cli/index.html#submodules" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_6_1" id="__nav_5_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Submodules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/cli/cli/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>cli.<wbr>cli
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/cli/cli_list/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>cli.<wbr>cli_<wbr>list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/cli/cli_run/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>cli.<wbr>cli_<wbr>run
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/cli/types/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>cli.<wbr>types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/cli/utils/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>cli.<wbr>utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/utils/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>utils
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/constants/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>constants
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="autoapi/czbenchmarks/exceptions/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    czbenchmarks.<wbr>exceptions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+    
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Assets
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assets
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-descriptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models-descriptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Models Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-descriptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Data Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-details" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cell-clustering-in-embedding-space" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Cell Clustering <wbr>(in embedding space)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cell Clustering (in embedding space)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-cell-clustering-in-embedding-space" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Cell Clustering <wbr>(in embedding space)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadata-label-prediction-cell-type-classification" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Metadata label prediction -<wbr> Cell type classification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata label prediction - Cell type classification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-metadata-label-prediction-cell-type-classification" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Metadata label prediction -<wbr> Cell type classification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-species-batch-integration" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Cross-<wbr>Species Batch Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cross-Species Batch Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-cross-species-batch-integration" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Cross-<wbr>Species Batch Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genetic-perturbation-prediction" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Genetic Perturbation Prediction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Genetic Perturbation Prediction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-genetic-perturbation-prediction" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Genetic Perturbation Prediction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guidelines-for-included-assets" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Guidelines for Included Assets
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="policy/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Policy
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Policy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="policy/definitions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Definitions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="policy/code_of_conduct.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="legal.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Legal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+  
+
+    
+      
+      
+  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="changelog_release_notes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog &amp; Release Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-descriptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models-descriptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Models Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-descriptions" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Data Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-details" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cell-clustering-in-embedding-space" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Cell Clustering <wbr>(in embedding space)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cell Clustering (in embedding space)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-cell-clustering-in-embedding-space" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Cell Clustering <wbr>(in embedding space)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadata-label-prediction-cell-type-classification" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Metadata label prediction -<wbr> Cell type classification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata label prediction - Cell type classification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-metadata-label-prediction-cell-type-classification" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Metadata label prediction -<wbr> Cell type classification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-species-batch-integration" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Cross-<wbr>Species Batch Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cross-Species Batch Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-cross-species-batch-integration" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Cross-<wbr>Species Batch Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genetic-perturbation-prediction" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Genetic Perturbation Prediction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Genetic Perturbation Prediction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-genetic-perturbation-prediction" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Task:<wbr> Genetic Perturbation Prediction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guidelines-for-included-assets" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      Guidelines for Included Assets
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                
+                
+                  
+  
+
+
+
+  
+  
+
+<h1 id="assets">Assets<a class="headerlink" href="#assets" title="Link to this heading">¶</a></h1>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#task-descriptions">Task Descriptions</a></p></li>
+<li><p><a class="reference internal" href="#models-descriptions">Model Descriptions</a></p></li>
+<li><p><a class="reference internal" href="#data-descriptions">Data Descriptions</a></p></li>
+<li><p><a class="reference internal" href="#task-details">Task Details</a></p>
+<ul>
+<li><p><a class="reference internal" href="#cell-clustering-in-embedding-space">Cell Clustering (in embedding space)</a></p></li>
+<li><p><a class="reference internal" href="#metadata-label-prediction-cell-type-classification">Metadata Label Prediction - Cell Type Classification</a></p></li>
+<li><p><a class="reference internal" href="#cross-species-batch-integration">Cross-Species Batch Integration</a></p></li>
+<li><p><a class="reference internal" href="#genetic-perturbation-prediction">Genetic Perturbation Prediction</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#guidelines-for-included-assets">Guidelines for Included Assets</a></p></li>
+</ul>
+<h2 id="task-descriptions">Task Descriptions<a class="headerlink" href="#task-descriptions" title="Link to this heading">¶</a></h2>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Task</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#cell-clustering-in-embedding-space">Cell clustering</a> (in embedding space)</p></td>
+<td><p>Cluster cells in embedding space and evaluate against known labels (e.g. cell type)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#metadata-label-prediction-cell-type-classification">Cell type classification</a></p></td>
+<td><p>Use classifiers to predict cell type from embeddings</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cross-species-batch-integration">Cross-Species Batch Integration</a></p></td>
+<td><p>Evaluate whether embeddings can align multiple species in a shared space</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#genetic-perturbation-prediction">Genetic perturbation prediction</a></p></td>
+<td><p>[In progress, subject to further validation] Compare predicted vs ground-truth expression shifts under genetic perturbation</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="models-descriptions">Models Descriptions<a class="headerlink" href="#models-descriptions" title="Link to this heading">¶</a></h2>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AIDO.Cell 3M</p></td>
+<td><p>Transformer-based foundation model capable of handling the entire human transcriptome as input and demonstrating performance on tasks such as zero-shot clustering, cell type classification, and perturbation modeling.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01964078-54e7-7937-8817-0c53dda9c153">Model card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Geneformer  gf-12L-95M-i4096</p></td>
+<td><p>A foundation model for single-cell data that generates meaningful embeddings of cells that can then be used for a wide variety of downstream tasks in a zero-shot manner.</p></td>
+<td><p><a class="reference external" href="https://huggingface.co/ctheodoris/Geneformer">Hugging face</a></p></td>
+</tr>
+<tr class="row-even"><td><p>scGenePTGO-all, fine tuned, Adamson</p></td>
+<td><p>A single-cell model for perturbation prediction. This is a model variation fine-tuned on the gene ontology annotations, molecular function annotations, cellular component annotations, biological processes annotations, and Adamson et al. datasets.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120">Model card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>scGenePTGO−all, fine-tuned, Norman</p></td>
+<td><p>A single-cell model for perturbation prediction. This is a model variation fine-tuned on the gene ontology annotations, molecular function annotations, cellular component annotations,biological processes annotations, and Norman et al. datasets.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120">Model card</a></p></td>
+</tr>
+<tr class="row-even"><td><p>scGenePTGO-C, fine-tuned, Adamson</p></td>
+<td><p>A single-cell model for perturbation prediction. This is a model variation fine-tuned on gene ontology annotation,  gene cellular component annotations, and Adamson et al. datasets.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120">Model card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>scGenePTGO-C, fine-tuned, Norman</p></td>
+<td><p>A single-cell model for perturbation prediction. This is a model variation fine-tuned on gene ontology annotation,  gene cellular component annotations, and Norman et al. datasets.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120">Model card</a></p></td>
+</tr>
+<tr class="row-even"><td><p>scGenePTNCBI+UniProt, fine-tuned, Adamson</p></td>
+<td><p>A single-cell model for perturbation prediction. This is a model variation fine-tuned on NCBI Gene Card Summaries, UniProt protein summaries, and Adamson et al. datasets.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120">Model card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>scGenePTNCBI+UniProt, fine-tuned, Norman</p></td>
+<td><p>A single-cell model for perturbation prediction. This is a model variation fine-tuned on NCBI Gene Card Summaries, UniProt protein summaries, and Norman et al. datasets.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120">Model card</a></p></td>
+</tr>
+<tr class="row-even"><td><p>scGPT - whole human</p></td>
+<td><p>A foundation model designed to integrate and analyze large-scale single-cell multi-omics data using a generative pre-trained transformer (GPT) architecture.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/0193323f-2875-7858-862c-6903bf667543">Model card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>scVI - Version: CxG scVI trained on Census 2023-12-15, homo sapiens, 63M cells</p></td>
+<td><p>Uses autoencoding-variational Bayesian optimization to learn the underlying latent state of gene expression and to approximate the distributions that underlie observed expression values, while accounting for batch effects and limited sensitivity.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/0192c0b9-e574-7f7e-bf7d-167ed1ef2ced">Model card</a></p></td>
+</tr>
+<tr class="row-even"><td><p>TF-Exemplar</p></td>
+<td><p>A generative model trained on 110 million cells from human and four model organisms that demonstrates zero-shot performance for cell type classification across species.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc">Model card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>TF-Metazoa</p></td>
+<td><p>A generative model trained on 112 million cells spanning all twelve species, demonstrating zero-shot performance for cell type classification across species.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc">Model card</a></p></td>
+</tr>
+<tr class="row-even"><td><p>TF-Sapiens</p></td>
+<td><p>A generative model trained on 57 million human-only cells trained for tasks such as  disease state identification in human cells prediction of cell type specific transcription factors and gene-gene regulatory relationships in humans.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc">Model card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>UCE - 33 layer</p></td>
+<td><p>A  zero-shot foundation model for single-cell biology, representing any cell across species, tissues, and disease states in a fixed embedding space where cell organization emerges without predefined cell types.</p></td>
+<td><p><a class="reference external" href="https://github.com/snap-stanford/UCE">Repo</a></p></td>
+</tr>
+<tr class="row-even"><td><p>UCE - 4 layer</p></td>
+<td><p>A zero-shot foundation model for single-cell biology, representing any cell across species, tissues, and disease states in a fixed embedding space where cell organization emerges without predefined cell types.</p></td>
+<td><p><a class="reference external" href="https://github.com/snap-stanford/UCE">Repo</a></p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-descriptions">Data Descriptions<a class="headerlink" href="#data-descriptions" title="Link to this heading">¶</a></h2>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dataset</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tabula sapiens V2</p></td>
+<td><p>Part of a reference human cell atlas that includes single-cell transcriptomic data for over 500,000 cells representing 26 tissues sampled from male (n = 2) and female (n = 7) donors. Tissues include: bladder, blood, bone marrow, ear, eye, fat, heart, large intestine, liver, lung, lymph node, mammary, muscle, ovary, prostate, salivary gland, skin, small intestine, spleen, stomach, testis thymus, tongue, trachea uterus, and vasculature.</p></td>
+<td><p>s3://cz-benchmarks-data/datasets/v1/cell_atlases/Homo_sapiens/Tabula_Sapiens_v2/</p></td>
+</tr>
+<tr class="row-odd"><td><p>Spermatogenesis</p></td>
+<td><p>Includes single-nucleus RNA sequencing (snRNA-seq) data for testes from eleven species, including ten representative mammals and a bird. Species include human, mouse, Rhesus macaque, gorilla, chimpanzee, marmoset, chicken, opossum, and platypus.</p></td>
+<td><p>s3://cz-benchmarks-data/datasets/v1/evo_distance/testis/</p></td>
+</tr>
+<tr class="row-even"><td><p>Adamson et al.</p></td>
+<td><p>Comprises single-cell RNA sequencing (scRNA-seq) data generated from a multiplexed CRISPR screening platform. It captures transcriptional profiles resulting from targeted genetic perturbations, facilitating the systematic study of the unfolded protein response (UPR) at a single-cell resolution.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/dataset/01933236-960b-7b1a-bfe3-f3ebc7415076">Data card</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Norman et al.</p></td>
+<td><p>Comprises single-cell RNA sequencing (scRNA-seq) data obtained from Perturb-seq experiments. It captures transcriptional profiles resulting from genetic perturbations, facilitating the study of genetic interactions and cellular state landscapes.</p></td>
+<td><p><a class="reference external" href="https://virtualcellmodels.cziscience.com/dataset/01933237-1bad-7ead-9619-4730290f2df4">Data card</a></p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="task-details">Task Details<a class="headerlink" href="#task-details" title="Link to this heading">¶</a></h2>
+<h3 id="cell-clustering-in-embedding-space">Cell Clustering (in embedding space)<a class="headerlink" href="#cell-clustering-in-embedding-space" title="Link to this heading">¶</a></h3>
+<p>This task evaluates how well the model’s embedding space separates different cell types. There is a forward pass of the data to produce embeddings. The embeddings are then clustered and compared to known cell type labels.</p>
+<h4 id="task-cell-clustering-in-embedding-space">Task: Cell Clustering (in embedding space)<a class="headerlink" href="#task-cell-clustering-in-embedding-space" title="Link to this heading">¶</a></h4>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Mode</p></th>
+<th class="head"><p>Metrics</p></th>
+<th class="head"><p>Metric description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Clustering Task</p></td>
+<td><p>ARI</p></td>
+<td><p>Adjusted Rand Index of biological labels and leiden clusters. Described in <a class="reference external" href="https://scib-metrics.readthedocs.io/en/stable/generated/scib_metrics.nmi_ari_cluster_labels_leiden.html">Luecken et al.</a> and implemented in <a class="reference external" href="https://scib-metrics.readthedocs.io/en/stable/generated/scib_metrics.nmi_ari_cluster_labels_leiden.html">scib-metrics.</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>NMI</p></td>
+<td><p>Normalized Mutual Information of biological labels and leiden clusters. Described in <a class="reference external" href="https://scib-metrics.readthedocs.io/en/stable/generated/scib_metrics.nmi_ari_cluster_labels_leiden.html">Luecken et al.</a> and implemented in <a class="reference external" href="https://scib-metrics.readthedocs.io/en/stable/generated/scib_metrics.nmi_ari_cluster_labels_leiden.html">scib-metrics.</a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Embedding Task</p></td>
+<td><p>Silhouette score</p></td>
+<td><p>Measures cluster separation based on within-cluster and between-cluster distances to evaluate the quality of clusters with respect to biological labels. Described in <a class="reference external" href="https://scib-metrics.readthedocs.io/en/stable/generated/scib_metrics.nmi_ari_cluster_labels_leiden.html">Luecken et al.</a> and implemented in <a class="reference external" href="https://scib-metrics.readthedocs.io/en/stable/generated/scib_metrics.nmi_ari_cluster_labels_leiden.html">scib-metrics.</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The following models were benchmarked using the Tabula Sapiens v2 dataset, per tissue:</p>
+<ul class="simple">
+<li><p>AIDO.Cell 3M</p></li>
+<li><p>Geneformer  gf-12L-95M-i4096</p></li>
+<li><p>Linear baseline</p></li>
+<li><p>scGPT</p></li>
+<li><p>scVI - Census 2023-12-15</p></li>
+<li><p>Transcriptformer Examplar</p></li>
+<li><p>Transcriptformer Metazoa</p></li>
+<li><p>Transcriptformer  Sapiens</p></li>
+<li><p>UCE 33-layer</p></li>
+<li><p>UCE 4 -layer</p></li>
+</ul>
+<h3 id="metadata-label-prediction-cell-type-classification">Metadata label prediction - Cell type classification<a class="headerlink" href="#metadata-label-prediction-cell-type-classification" title="Link to this heading">¶</a></h3>
+<p>This task evaluates how well model embeddings capture information relevant to cell identity. This is achieved by a forward pass of the data through each model to retrieve embeddings, and then using the embeddings to train different classifiers, in this case we are using Logistic Regression, KNN, and RandomForest,to predict the cell type. To ensure a reliable evaluation, a 5-fold cross-validation strategy is employed. For each split, the classifier’s predictions on the held-out data, along with the true cell type labels, are used to compute a range of classification metrics. The final benchmark output for each metric is the average across the 5 cross-validation folds.</p>
+<h4 id="task-metadata-label-prediction-cell-type-classification">Task: Metadata label prediction - Cell type classification<a class="headerlink" href="#task-metadata-label-prediction-cell-type-classification" title="Link to this heading">¶</a></h4>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metrics</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Macro F1</p></td>
+<td><p>Measures the harmonic mean of precision and recall; ( 2*tp ) / ( 2 * tp + fp + fn ) where tp = true positives, fn = false negatives, fp = false positives. Implemented <a class="reference external" href="https://github.com/chanzuckerberg/cz-benchmarks/blob/7adf963a1bc7cb858e9d5895be9b8ad11633ecab/src/czbenchmarks/metrics/implementations.py#L102">here</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Accuracy</p></td>
+<td><p>Proportion of correct predictions over total predictions. Implemented <a class="reference external" href="https://github.com/chanzuckerberg/cz-benchmarks/blob/7adf963a1bc7cb858e9d5895be9b8ad11633ecab/src/czbenchmarks/metrics/implementations.py#L94">here</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Precision</p></td>
+<td><p>Measures the proportion of true positive predictions among all positive predictions; tp / (tp + fp) where tp = true positives, fp = false positives. Implemented <a class="reference external" href="https://github.com/chanzuckerberg/cz-benchmarks/blob/7adf963a1bc7cb858e9d5895be9b8ad11633ecab/src/czbenchmarks/metrics/implementations.py#L110">here</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall</p></td>
+<td><p>Measures the proportion of actual positive instances that were correctly identified;<br><br>tp / (tp + fn) where tp = true positives, fn = false negatives. Implemented <a class="reference external" href="https://github.com/chanzuckerberg/cz-benchmarks/blob/7adf963a1bc7cb858e9d5895be9b8ad11633ecab/src/czbenchmarks/metrics/implementations.py#L118">here</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>AUROC</p></td>
+<td><p>Measures the probability that the model will rank a randomly chosen data point belonging to that category higher than a randomly chosen data point not belonging to that category. Implemented <a class="reference external" href="https://github.com/chanzuckerberg/cz-benchmarks/blob/7adf963a1bc7cb858e9d5895be9b8ad11633ecab/src/czbenchmarks/metrics/implementations.py#L126">here</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following models were benchmarked using the Tabula Sapiens v2 dataset, per tissue:</p>
+<ul class="simple">
+<li><p>AIDO.Cell 3M</p></li>
+<li><p>Geneformer  gf-12L-95M-i4096</p></li>
+<li><p>Linear baseline</p></li>
+<li><p>scGPT</p></li>
+<li><p>scVI - Census 2023-12-15</p></li>
+<li><p>Transcriptformer Exemplar</p></li>
+<li><p>Transcriptformer Metazoa</p></li>
+<li><p>Transcriptformer Sapiens</p></li>
+<li><p>UCE 33-layer</p></li>
+<li><p>UCE 4-layer</p></li>
+</ul>
+<h3 id="cross-species-batch-integration">Cross-Species Batch Integration<a class="headerlink" href="#cross-species-batch-integration" title="Link to this heading">¶</a></h3>
+<p>This task evaluates the model’s ability to learn representations that are consistent across different species. There is a forward pass of the data (each species is treated as an individual dataset) through the model. Once embeddings are generated for each species, they are concatenated into a single embedding matrix to enable cross-species comparison. Finally, the concatenated embeddings, along with the corresponding species labels, are used to compute evaluation metrics.</p>
+<h4 id="task-cross-species-batch-integration">Task: Cross-Species Batch Integration<a class="headerlink" href="#task-cross-species-batch-integration" title="Link to this heading">¶</a></h4>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metrics</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Entropy per cell</p></td>
+<td><p>Measures the average entropy of the batch labels within the local neighborhood of each cell. Implemented <a class="reference external" href="https://github.com/chanzuckerberg/cellxgene-census/blob/f44637ba33567400820407f4f7b9984e52966156/tools/models/metrics/run-scib.py#L86">here</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Batch silhouette</p></td>
+<td><p>A modified silhouette score to measure the extent of batch mixing within biological labels. Described by <a class="reference external" href="https://www.nature.com/articles/s41592-021-01336-8">Luecken et al</a>.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following models were benchmarked using the Spermatogenesis  dataset, per species:</p>
+<ul class="simple">
+<li><p>Transcriptformer Exemplar</p></li>
+<li><p>Transcriptformer Metazoa</p></li>
+<li><p>UCE 33-layer</p></li>
+<li><p>UCE 4-Layer</p></li>
+</ul>
+<h3 id="genetic-perturbation-prediction">Genetic Perturbation Prediction<a class="headerlink" href="#genetic-perturbation-prediction" title="Link to this heading">¶</a></h3>
+<p>Warning: This task is still in progress. Results are subject to further validation.</p>
+<p>This task evaluates the performance of models fine-tuned to predict cellular responses to genetic perturbations. The process involves applying the fine-tuned model to a test dataset and comparing its predictions with observed ground-truth perturbation profiles. Predicted gene expression profiles after perturbation are generated by running a held-out dataset through the fine-tuned model. These predicted profiles are then compared to ground-truth gene expression profiles for the applied perturbations.</p>
+<h4 id="task-genetic-perturbation-prediction">Task: Genetic Perturbation Prediction<a class="headerlink" href="#task-genetic-perturbation-prediction" title="Link to this heading">¶</a></h4>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metrics</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MSE - top 20 DE genes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>MSE - all genes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Pearson Delta Correlation - top 20 DE genes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Pearson Delta Correlation - all genes</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Jaccardian Similarity</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>The following models were benchmarked using the Adamson et al.  dataset:</p>
+<ul>
+<li><p>scGenePTGO-all, fine tuned, Adamson</p></li>
+<li><p>scGenePTGO-C, fine-tuned, Adamson</p></li>
+<li><p>scGenePTNCBI+UniProt, fine-tuned, Adamson</p></li>
+</ul>
+</li>
+<li><p>The following models were benchmarked using the Norman et al.  dataset:</p>
+<ul>
+<li><p>scGenePTGO−all, fine-tuned, Norman</p></li>
+<li><p>scGenePTGO-C, fine-tuned, Norman</p></li>
+<li><p>scGenePTNCBI+UniProt, fine-tuned, Norman</p></li>
+</ul>
+</li>
+</ul>
+<h2 id="guidelines-for-included-assets">Guidelines for Included Assets<a class="headerlink" href="#guidelines-for-included-assets" title="Link to this heading">¶</a></h2>
+<p>As cz-benchmarks develops, robust governance policies will be developed to support direct community contribution.</p>
+<p>At this stage, the cz-benchmarks project represents an initial prototype and policy and project governance are intended to provide transparency and support the project in its current phase. Initial guidelines are as follows:</p>
+<ul class="simple">
+<li><p>All content (models, tasks, metrics) included in cz-benchmarks currently represents a subset of recommendations from CZI staff.</p></li>
+<li><p>Models included within the package have been contributed by CZI, on behalf of model developers. Feedback from model developers is being sourced via direct outreach to these individuals.</p></li>
+<li><p>Future versions will incorporate an expanded and refined set of assets. However, not all assets are appropriate for inclusion in a benchmarking platform. Benchmark assets are chosen based on overall quality in relation to comparable reference points, current standards in the research community, and relationship to supported priority benchmark domains as outlined in the <a class="reference internal" href="roadmap.html"><span class="std std-doc">roadmap</span></a>. Formal asset contribution and asset governance policies are in development.</p></li>
+<li><p><strong>Note</strong>: TranscriptFormer was developed by the CZI AI team using separate task implementations. The cz-benchmarks task definitions, developed by the CZI SciTech team, were not included as a part of TranscriptFormer training and evaluation.</p></li>
+<li><p>At this phase, the CZI SciTech team will guide initial decisions, coordinate updates, and ensure that all assets conform to policy requirements (licensing, versioning, etc.) through direct collaboration with working groups, composed of domain-specific experts from the broader scientific community and partners.</p></li>
+<li><p>We value your feedback – feel free to open a GitHub issue or reach out to us at <a class="reference external" href="mailto:virtualcellmodels&#37;&#52;&#48;chanzuckerberg&#46;com">virtualcellmodels<span>&#64;</span>chanzuckerberg<span>&#46;</span>com</a>.</p></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2025, Chan Zuckerberg Initiative.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    8.1.3.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["toc.follow", "toc.sticky", "navigation.tabs", "navigation.tabs.sticky", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+        <script src="_static/sphinx_immaterial_theme.32136f45f91ae6956.min.js?v=a7a9472a"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script src="_static/design-tabs.js?v=f930bc37"></script>
+    
+  </body>
+</html>
