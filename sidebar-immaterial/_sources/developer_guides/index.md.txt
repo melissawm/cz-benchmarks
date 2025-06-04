@@ -1,0 +1,52 @@
+# Developer Guides
+
+Here, you will find comprehensive documentation to help you understand the design principles, datasets, models, tasks, metrics, and APIs used in this project.
+
+These guides are intended for developers who want to contribute to the project or gain a deeper understanding of its architecture and components. Each section provides detailed explanations and examples to assist you in your development journey.
+
+
+::::{grid} 1 1 2 2
+:gutter: 2
+
+:::{grid-item-card} Design overview
+:link: design_overview
+:link-type: doc
+
+:::
+
+:::{grid-item-card} Datasets
+:link: datasets
+:link-type: doc
+
+:::
+
+:::{grid-item-card} Models
+:link: models
+:link-type: doc
+
+:::
+
+:::{grid-item-card} Tasks
+:link: tasks
+:link-type: doc
+
+:::
+
+:::{grid-item-card} Metrics
+:link: metrics
+:link-type: doc
+
+:::
+
+:::{grid-item-card} Debugging
+:link: debugging
+:link-type: doc
+
+:::
+
+:::{grid-item-card} Release process
+:link: release_process
+:link-type: doc
+
+:::
+::::
