@@ -1,0 +1,40 @@
+czbenchmarks.cli.utils
+======================
+
+.. py:module:: czbenchmarks.cli.utils
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   czbenchmarks.cli.utils.log
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   czbenchmarks.cli.utils.get_version
+   czbenchmarks.cli.utils.aggregate_task_results
+
+
+Module Contents
+---------------
+
+.. py:data:: log
+
+.. py:function:: get_version() -> str
+
+   Get the current version of the cz-benchmarks library
+
+
+.. py:function:: aggregate_task_results(results: Iterable[czbenchmarks.cli.types.TaskResult]) -> list[czbenchmarks.cli.types.TaskResult]
+
+   Aggregate the task results by task_name, model (with args), and set(datasets).
+   Each new result will have a new set of metrics, created by aggregating together
+   metrics of the same type.
+
+

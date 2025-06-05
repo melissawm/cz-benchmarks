@@ -1,0 +1,4 @@
+```{eval-rst}
+.. include:: ../../LICENSE.md
+   :parser: myst
+```
