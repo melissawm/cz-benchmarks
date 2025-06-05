@@ -1,3 +1,7 @@
+---
+hide-navigation: true
+---
+
 # Developer Guides
 
 Here, you will find comprehensive documentation to help you understand the design principles, datasets, models, tasks, metrics, and APIs used in this project.

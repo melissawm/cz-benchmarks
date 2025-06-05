@@ -620,13 +620,14 @@ html .md-footer-meta.md-typeset a {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 0.4rem;
+  align-items: center;
 }
 
 .czi-inner {
   display: flex;
   flex-direction: row;
   padding-top: 0.4rem;
-  align-items: center;
+  align-self: end;
   color: white;
 }
 
@@ -983,4 +984,25 @@ div.md-banner__inner {
 
 .md-banner__button {
   padding-top: 2px;
+}
+
+.md-tabs .md-grid {
+  margin-left: 10px;
+  max-width: 100%;
+}
+
+.md-footer-meta__text {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-weight: bold;
+}
+
+.hl {
+  border-top: 2px solid white;
+  width: 100%;
+  opacity: 0.4;
+  margin-right: 4px;
+  margin-top: 25px;
+  margin-bottom: 5px;
 }

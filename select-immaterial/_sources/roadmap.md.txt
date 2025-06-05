@@ -1,3 +1,7 @@
+---
+hide-navigation: true
+---
+
 # Roadmap
 
 👋 Welcome to the public roadmap for the cz-benchmarks package — a collaborative effort to enable the scientific community to conduct reproducible, biologically-relevant benchmarking of AI models for biology, across domains.

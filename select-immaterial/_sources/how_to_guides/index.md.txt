@@ -1,3 +1,7 @@
+---
+hide-navigation: true
+---
+
 # How To Guides
 
 The How To Guides offer step-by-step instructions for common customizations and usage scenarios.

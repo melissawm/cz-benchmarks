@@ -1,3 +1,7 @@
+---
+hide-navigation: true
+---
+
 # API Reference
 
 The cz-benchmarks package consists of several core modules, each designed to work independently while contributing to a cohesive benchmarking workflow. Below is an overview of these modules, along with links to their detailed documentation.

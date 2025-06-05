@@ -1,3 +1,7 @@
+---
+hide-navigation: true
+---
+
 # Assets
 
 ## Table of Contents

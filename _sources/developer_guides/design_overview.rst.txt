@@ -66,6 +66,16 @@ Class Diagrams
 ..    :alt: Class diagram for cz-benchmarks components
 ..    :zoom:
 
+.. md-mermaid::
+    :name: flowcharts
+
+    graph LR
+      A[Start] --> B{Error?};
+      B -->|Yes| C[Hmm...];
+      C --> D[Debug];
+      D --> B;
+      B ---->|No| E[Yay!];
+
 .. autoclasstree:: czbenchmarks.datasets
    :name: class-diagram-datasets
    :alt: Class diagram for cz-benchmarks Datasets
